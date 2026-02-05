@@ -313,3 +313,27 @@ ggplot(dn_lq, mapping = aes(
 The locations of Denny’s are spread out across North Carolina, but it
 does seem like every La Quinta location is somesort near a Denny’s
 location rather than isolated alone.
+
+### Exercise 12
+
+``` r
+filter(dn_lq, state == "TX") %>% 
+ggplot(dn_lq, mapping = aes(
+  x = longitude,
+  y = latitude,
+  color = establishment
+)) +
+  geom_point(alpha = 0.3) +
+   labs(
+    title = "Denny's and La Quinta locations in Texas",
+    x = "Longitude",
+    y = "Latitude",
+    color = "Establishment"
+  )
+```
+
+![](lab-04_files/figure-gfm/filter%20for%20TX-1.png)<!-- -->
+
+There seems to be more spread out La Quinta locations in Texas, and
+Denny’s locations seem to be more centered and concentrated around La
+Quinta establishments rather than isolated.

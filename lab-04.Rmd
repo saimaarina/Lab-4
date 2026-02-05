@@ -53,7 +53,15 @@ There are no Denny's locations outside of the US.
 
 ### Exercise 6
 
-...
+```{r Add a country variable to the Denny’s dataset and set all observations equal to "United States"}
+
+dennys %>%
+  mutate(country = "United States")
+
+dennys <- dennys %>% 
+  mutate(country = "United States")
+```
+
 
  
 Add exercise headings as needed.

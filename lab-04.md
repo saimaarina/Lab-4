@@ -114,4 +114,12 @@ dennys <- dennys %>%
   mutate(country = "United States")
 ```
 
-Add exercise headings as needed.
+### Exercise 7
+
+There are La Quinta locations in Canada: British Columbia (Kelowna and
+Richmond), and Ontario (Oshawa). In Mexico: Aguascalientes, Ciudad
+Juarez, Poza Rica, Puebla, Reynosa, and San Jose Chiapa. In China:
+Chengdu, Qionghai, Suzhou, Taiyuan, Turpan, Weifang, and Zunyi. In New
+Zealand: Auckland and Queenstown. In Georgia: Batumi. In Turkiye:
+Bodrum, Cesme, Giresun, and Istanbul. In United Arab Emirates: Abu Dhabi
+and Dubai. In Colombia: Medellin. In Ecuador: Quito.

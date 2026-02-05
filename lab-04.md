@@ -16,15 +16,29 @@ states <- read_csv("data/states.csv")
 
 ### Exercise 1
 
-Remove this text, and add your answer for Exercise 1 here. Add code
-chunks as needed. Don’t forget to label your code chunk. Do not use
-spaces in code chunk labels.
+``` r
+nrow(dennys)
+```
+
+    ## [1] 1643
+
+``` r
+ncol(dennys)
+```
+
+    ## [1] 6
+
+``` r
+dim(dennys)
+```
+
+    ## [1] 1643    6
+
+The Denny’s dataset has 1,643 rows and 6 columns. Each row represents a
+Denny’s location, The variables are: address, city, state, zip,
+longitude, and latitude.
 
 ### Exercise 2
-
-Remove this text, and add your answer for Exercise 2 here. Add code
-chunks as needed. Don’t forget to label your code chunk. Do not use
-spaces in code chunk labels.
 
 ### Exercise 3
 

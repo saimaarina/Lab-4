@@ -267,3 +267,25 @@ laquinta %>%
     ## # ℹ 38 more rows
 
 RI, FL, and CT have the most La Quinta locations per thousand sq. miles.
+
+``` r
+dennys <- dennys %>%
+  mutate(establishment = "Denny's")
+laquinta <- laquinta %>%
+  mutate(establishment = "La Quinta")
+```
+
+``` r
+dn_lq <- bind_rows(dennys, laquinta)
+```
+
+``` r
+ggplot(dn_lq, mapping = aes(
+  x = longitude,
+  y = latitude,
+  color = establishment
+)) +
+  geom_point()
+```
+
+![](lab-04_files/figure-gfm/plot-1.png)<!-- -->

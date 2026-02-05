@@ -24,11 +24,16 @@ nrow(dennys)
 ncol(dennys)
 dim(dennys)
 ```
-The Denny's dataset has 1,643 rows and 6 columns. Each row represents a Denny's location, The variables are: address, city, state, zip, longitude, and latitude. 
+The Denny's dataset has 1,643 rows and 6 columns. Each row represents a Denny's location. The variables are: address, city, state, zip, longitude, and latitude. 
 
 ### Exercise 2
 
-
+```{r dimensions of Laquinta dataset}
+nrow(laquinta)
+ncol(laquinta)
+dim(laquinta)
+```
+The La Quinta dataset has 909 rows and 6 columns. Each row represents a La Quinta location. The variables are: address, city, state, zip, longitude, and latitude. 
 
 ### Exercise 3
 

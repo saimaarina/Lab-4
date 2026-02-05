@@ -38,11 +38,10 @@ The La Quinta dataset has 909 rows and 6 columns. Each row represents a La Quint
 ### Exercise 3
 
 There are La Quinta locations in Canada, Mexico, China, New Zealand, Georgia (the country), Turkiye, the United Arab Emirates, Colombia, and Ecuador. There are no Denny's locations outside of the United States. 
-...
 
 ### Exercise 4
 
-...
+To find a location outside the US using just the data, you could filter for any location that either has no state or an abbreviated state that does not match any of the states of the USA. 
 
 ### Exercise 5
 

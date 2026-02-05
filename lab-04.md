@@ -64,7 +64,9 @@ longitude, and latitude.
 
 ### Exercise 3
 
-…
+There are La Quinta locations in Canada, Mexico, China, New Zealand,
+Georgia (the country), Turkiye, the United Arab Emirates, Colombia, and
+Ecuador. There are no Denny’s locations outside of the United States. …
 
 ### Exercise 4
 

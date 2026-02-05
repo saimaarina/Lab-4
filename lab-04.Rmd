@@ -45,7 +45,11 @@ To find a location outside the US using just the data, you could filter for any 
 
 ### Exercise 5
 
-...
+```{r Filter for states that are not in states$abbreviation}
+dennys %>%
+  filter(!(state %in% states$abbreviation))
+```
+There are no Denny's locations outside of the US. 
 
 ### Exercise 6
 

@@ -76,7 +76,16 @@ does not match any of the states of the USA.
 
 ### Exercise 5
 
-…
+``` r
+dennys %>%
+  filter(!(state %in% states$abbreviation))
+```
+
+    ## # A tibble: 0 × 6
+    ## # ℹ 6 variables: address <chr>, city <chr>, state <chr>, zip <chr>,
+    ## #   longitude <dbl>, latitude <dbl>
+
+There are no Denny’s locations outside of the US.
 
 ### Exercise 6
 

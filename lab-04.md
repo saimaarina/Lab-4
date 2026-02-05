@@ -289,3 +289,27 @@ ggplot(dn_lq, mapping = aes(
 ```
 
 ![](lab-04_files/figure-gfm/plot-1.png)<!-- -->
+
+### Exercise 11
+
+``` r
+filter(dn_lq, state == "NC") %>% 
+ggplot(dn_lq, mapping = aes(
+  x = longitude,
+  y = latitude,
+  color = establishment
+)) +
+  geom_point(alpha = 0.5) +
+   labs(
+    title = "Denny's and La Quinta locations in North Carolina",
+    x = "Longitude",
+    y = "Latitude",
+    color = "Establishment"
+  )
+```
+
+![](lab-04_files/figure-gfm/filter%20for%20NC%20observations-1.png)<!-- -->
+
+The locations of Denny’s are spread out across North Carolina, but it
+does seem like every La Quinta location is somesort near a Denny’s
+location rather than isolated alone.

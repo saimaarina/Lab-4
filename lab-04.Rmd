@@ -114,5 +114,25 @@ dennys %>%
   inner_join(states, by = c("state" = "abbreviation"))
 ```
 
+### Exercise 10
 
+```{r most locations per 1000 sq miles for dennys}
+dennys %>%
+  count(state) %>%
+  inner_join(states, by = c("state" = "abbreviation")) %>% 
+  mutate(dennys_per_1000sqmi = n / (area / 1000)) %>% 
+  arrange(desc(dennys_per_1000sqmi))
+```
+
+DC, RI, and CA have the most Denny's locations per thousand sq. miles.
+
+```{r most locations per 1000 sq miles for la quinta}
+laquinta %>%
+  count(state) %>%
+  inner_join(states, by = c("state" = "abbreviation")) %>% 
+  mutate(dennys_per_1000sqmi = n / (area / 1000)) %>% 
+  arrange(desc(dennys_per_1000sqmi))
+```
+
+RI, FL, and CT have the most La Quinta locations per thousand sq. miles.
 

@@ -86,3 +86,33 @@ laquinta <- laquinta %>%
   filter(country == "United States")
 ```
 
+
+### Exercise 9
+
+```{r calculate dennys locations by state}
+dennys %>% 
+  count(state, name = "n") %>% 
+  arrange(n)
+```
+
+Delaware has the fewest Denny's locations and California, Texas, and Florida has the most. 
+
+```{r calculate la quinta locations by state}
+laquinta %>% 
+  count(state, name = "n") %>% 
+  arrange(n)
+```
+
+Maine has the fewest La Quinta locations and California, Texas, and Florida has the most. 
+
+It is not surprising to me that the most populous states have the most locations and the lesser populous states have the least. 
+
+
+```{r}
+dennys %>%
+  count(state) %>%
+  inner_join(states, by = c("state" = "abbreviation"))
+```
+
+
+

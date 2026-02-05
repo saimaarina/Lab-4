@@ -141,3 +141,77 @@ laquinta <- laquinta %>%
 laquinta <- laquinta %>% 
   filter(country == "United States")
 ```
+
+### Exercise 9
+
+``` r
+dennys %>% 
+  count(state, name = "n") %>% 
+  arrange(n)
+```
+
+    ## # A tibble: 51 × 2
+    ##    state     n
+    ##    <chr> <int>
+    ##  1 DE        1
+    ##  2 DC        2
+    ##  3 VT        2
+    ##  4 AK        3
+    ##  5 IA        3
+    ##  6 NH        3
+    ##  7 SD        3
+    ##  8 WV        3
+    ##  9 LA        4
+    ## 10 MT        4
+    ## # ℹ 41 more rows
+
+Delaware has the fewest Denny’s locations and California, Texas, and
+Florida has the most.
+
+``` r
+laquinta %>% 
+  count(state, name = "n") %>% 
+  arrange(n)
+```
+
+    ## # A tibble: 48 × 2
+    ##    state     n
+    ##    <chr> <int>
+    ##  1 ME        1
+    ##  2 AK        2
+    ##  3 NH        2
+    ##  4 RI        2
+    ##  5 SD        2
+    ##  6 VT        2
+    ##  7 WV        3
+    ##  8 WY        3
+    ##  9 IA        4
+    ## 10 MI        4
+    ## # ℹ 38 more rows
+
+Maine has the fewest La Quinta locations and California, Texas, and
+Florida has the most.
+
+It is not surprising to me that the most populous states have the most
+locations and the lesser populous states have the least.
+
+``` r
+dennys %>%
+  count(state) %>%
+  inner_join(states, by = c("state" = "abbreviation"))
+```
+
+    ## # A tibble: 51 × 4
+    ##    state     n name                     area
+    ##    <chr> <int> <chr>                   <dbl>
+    ##  1 AK        3 Alaska               665384. 
+    ##  2 AL        7 Alabama               52420. 
+    ##  3 AR        9 Arkansas              53179. 
+    ##  4 AZ       83 Arizona              113990. 
+    ##  5 CA      403 California           163695. 
+    ##  6 CO       29 Colorado             104094. 
+    ##  7 CT       12 Connecticut            5543. 
+    ##  8 DC        2 District of Columbia     68.3
+    ##  9 DE        1 Delaware               2489. 
+    ## 10 FL      140 Florida               65758. 
+    ## # ℹ 41 more rows
